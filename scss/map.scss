@@ -1,0 +1,325 @@
+@import "cssReset";
+@import "base";
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mapBanner {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/qa.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 214px;
+  margin-bottom: 22px;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 700;
+    margin-right: 24px;
+  }
+}
+
+.mapArea {
+  margin-bottom: 156px;
+}
+
+.shopSelector {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+
+  select {
+    width: 266px;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 0 10px 19px;
+    color: #495057;
+    cursor: pointer;
+  }
+
+  .chooseShop {
+    margin-right: 22px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+}
+
+.infoArea {
+  display: flex;
+
+  .shopContent {
+    margin-right: 24px;
+  }
+
+  .shopName {
+    padding: 16px 0 16px 24px;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 600;
+    border: 1px solid #00000020;
+  }
+
+  .shopInfo {
+    padding: 16px 39.9px 16px 36px;
+    border: 1px solid #00000020;
+  }
+
+  .infoContent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .telIcon {
+      margin-right: 8px;
+    }
+
+    .clockIcon {
+      margin-right: 8px;
+    }
+
+    .locateIcon {
+      margin-right: 12px;
+      margin-top: -20px;
+      margin-left: 2px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .locateText {
+    line-height: 30px;
+  }
+
+  .infoButton {
+    display: block;
+    padding: 20px 120px;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #212529;
+  }
+
+  .infoButton:hover {
+    background-color: #aa0601;
+  }
+}
+
+.map {
+  width: 100%;
+  display: block;
+  position: relative;
+  padding-bottom: 41.9%;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .mapBanner {
+    padding-top: 237px;
+    margin-bottom: 8px;
+    .title {
+      font-size: 48px;
+      line-height: 1.5;
+      margin-right: 16px;
+    }
+
+    img {
+      width: 30.5px;
+      height: 43.8px;
+    }
+  }
+
+  .mapArea {
+    margin-bottom: 104px;
+  }
+
+  .shopSelector {
+    margin-bottom: 24px;
+
+    select {
+      width: 237px;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 12px 0 12px 16px;
+    }
+
+    .chooseShop {
+      margin-right: 23px;
+      font-size: 16px;
+    }
+  }
+
+  .infoArea {
+    flex-direction: column;
+
+    .shopContent {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 0;
+      margin-bottom: 32px;
+      
+      img {
+        margin-right: 24px;
+      }
+    }
+
+    .shopName {
+      padding: 8px 0 8px 16px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    
+    .information {
+      width: 50%;
+    }
+
+    .shopInfo {
+      padding: 16px 24px 16px 21px;
+    }
+
+    .infoContent {
+      img {
+        width: 21px;
+        height: 21px;
+      }
+
+      .telIcon {
+        margin-right: 13px;
+      }
+
+      .clockIcon {
+        margin-right: 13px;
+      }
+
+      .locateIcon {
+        margin-top: 2px;
+        margin-left: 0;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    .locateText {
+      line-height: 30px;
+    }
+
+    .infoButton {
+      display: none;
+    }
+  }
+
+  .map {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 11px;
+    padding-right: 12px;
+  }
+
+  .mapBanner {
+    padding-top: 103px;
+    
+    .title {
+      font-size: 28px;
+      margin-right: 8px;
+    }
+    
+    img {
+      width: 16.7px;
+      height: 24px;
+    }
+  }
+
+  .mapArea {
+    margin-bottom: 56px;
+  }
+
+  .shopSelector {
+    margin-bottom: 16px;
+
+    select {
+      font-size: 14px;;
+      padding: 8px 0 8px 16px;
+    }
+
+    .chooseShop {
+      margin-right: 23px;
+      font-size: 16px;
+    }
+  }
+
+  .infoArea {
+    flex-direction: column;
+
+    .shopContent {
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 20px;
+      
+      img {
+        margin-right: 0;
+        width: 100%;
+      }
+    }
+    
+    .information {
+      width: 100%;
+    }
+    
+    .shopInfo {
+      padding: 16px 52px 16px 16px;
+    }
+
+    .infoContent {
+      img {
+        width: 21px;
+        height: 21px;
+      }
+    }
+  }
+
+  .map {
+    width: 100%;;
+  }
+}
